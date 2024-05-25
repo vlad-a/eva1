@@ -2812,7 +2812,7 @@ h6 {
   }
   .header-list__wrapper li a {
     font-size: 13px;
-    gap: 10px;
+    gap: 15px;
   }
   .header__left {
     gap: 20px;
@@ -2834,6 +2834,10 @@ h6 {
 @media screen and (max-width: 1200px) {
   .header__logo img {
     max-width: 65px;
+  }
+  .header-list__wrapper li a {
+    font-size: 16px;
+    gap: 19px;
   }
   .shop__list {
     grid-template-columns: repeat(3, calc(33.3% - 15px));
@@ -2881,9 +2885,9 @@ h6 {
   .header-list__wrapper {
     background: #f1f3f5;
     position: absolute;
-    bottom: -119%;
+    bottom: -151%;
     width: 100%;
-    height: 116%;
+    height: 150%;
     left: 0;
     display: flex;
     justify-content: center;
@@ -2903,7 +2907,7 @@ h6 {
   .header__right {
     display: flex;
     position: absolute;
-    bottom: -219%;
+    bottom: -249%;
     background: #f1f3f5;
     width: 100%;
     left: 0;
@@ -3250,6 +3254,9 @@ h6 {
   .discord {
     padding-bottom: 0 !important;
   }
+  .header-list__wrapper li a {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header__right {
@@ -3288,6 +3295,9 @@ h6 {
   }
   .shop__list {
     grid-template-columns: repeat(1, calc(100%));
+  }
+  .header-list__wrapper li a {
+    font-size: 14px;
   }
   .header-list__wrapper li {
     width: 100%;
