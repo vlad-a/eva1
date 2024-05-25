@@ -645,13 +645,48 @@ h6 {
   transition: 300ms ease all;
 }
 
-.changes-slider-item__btn:hover,
-.discord-btn:hover {
+.changes-slider-item__btn:hover {
   filter: brightness(1.1);
+  transform: scale(1.04);
+}
+.discord-btn:hover {
   transform: scale(1.04);
 }
 .step-list-item-btns__reg:hover {
   transform: scale(1.04);
+}
+.changes-slider-item-btn__back {
+  position: relative;
+}
+.changes-slider-item-btn__back img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.changes-slider-item__btn:hover .changes-slider-item-btn__back img {
+  opacity: 1;
+}
+.discord-btn__back {
+  position: relative;
+}
+.discord-btn:hover img:last-child {
+  opacity: 1;
+}
+.discord-btn img {
+  transition: 250ms ease all;
+}
+.discord-btn:hover img:first-child {
+  opacity: 0;
+}
+.discord-btn__back img:last-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+.changes-slider-item-btn__back img {
+  max-width: 176px;
 }
 .step-list-item-btns__reg img,
 .changes-slider-item__btn img,
@@ -2963,8 +2998,8 @@ h6 {
   .header-list__wrapper {
     padding: 32px 0;
     text-align: center;
-    height: 231%;
-    bottom: -235%;
+    height: 237%;
+    bottom: -239%;
   }
   .deskr {
     padding: 70px 0;
@@ -3262,11 +3297,11 @@ h6 {
     text-align: center;
     height: fit-content;
     bottom: unset;
-    top: 105%;
+    top: 101%;
   }
   .header__right {
     bottom: unset;
-    top: 498%;
+    top: 482%;
     height: fit-content;
     flex-direction: column;
   }
